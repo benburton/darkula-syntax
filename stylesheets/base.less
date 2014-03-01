@@ -6,13 +6,10 @@
 
 @import "languages/css";
 @import "languages/less";
+@import "languages/javascript";
 @import "languages/scala";
 
 @comment-color: @asparagus;
-
-@constant-color: @amethyst-smoke;
-@constant-numeric-color: @amethyst-smoke;
-@constant-boolean-color: @amethyst-smoke;
 
 @entity-color: @heather;
 
@@ -55,19 +52,6 @@
 .keyword {
   color: @keyword-color;
   font-weight: @keyword-weight;
-}
-
-.constant {
-  color: @constant-color;
-
-  &.numeric {
-    color: @constant-numeric-color;
-  }
-
-  &.boolean {
-    color: @constant-boolean-color;
-  }
-
 }
 
 .variable {

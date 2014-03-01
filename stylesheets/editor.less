@@ -5,6 +5,9 @@
 @editor-cursor-line-background-color: @tundora;
 @editor-cursor-border-color: inherit;
 @editor-wrap-guide-background-color: @tundora;
+@editor-constant-color: @amethyst-smoke;
+@editor-constant-numeric-color: @glacier;
+@editor-constant-boolean-color: @amethyst-smoke;
 
 .editor-colors {
   background-color: @editor-background-color;
@@ -35,6 +38,19 @@
 
   .wrap-guide {
     background-color: @editor-wrap-guide-background-color;
+  }
+
+  .constant {
+    color: @editor-constant-color;
+
+    &.numeric {
+      color: @editor-constant-numeric-color;
+    }
+
+    &.boolean {
+      color: @editor-constant-boolean-color;
+    }
+
   }
 
 }
