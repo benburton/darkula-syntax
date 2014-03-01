@@ -2,7 +2,9 @@
 @editor-background-color: @mine-shaft;
 @editor-invisible-character-color: inherit;
 @editor-indent-guide-color: inherit;
+@editor-cursor-line-background-color: @tundora;
 @editor-cursor-border-color: inherit;
+@editor-wrap-guide-background-color: @tundora;
 
 .editor-colors {
   background-color: @editor-background-color;
@@ -23,8 +25,16 @@
     border-color: @editor-cursor-border-color;
   }
 
+  .cursor-line {
+    background-color: @editor-cursor-line-background-color;
+  }
+
   .selection .region {
     background-color: @editor-selection-background-color;
+  }
+
+  .wrap-guide {
+    background-color: @editor-wrap-guide-background-color;
   }
 
 }
