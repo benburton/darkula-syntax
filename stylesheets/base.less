@@ -1,0 +1,107 @@
+@import "ui-variables";
+@import "colors";
+
+@import "gutter";
+@import "editor";
+
+@import "languages/css";
+@import "languages/less";
+
+@comment-color: @asparagus;
+
+@constant-color: @amethyst-smoke;
+@constant-numeric-color: @amethyst-smoke;
+@constant-boolean-color: @amethyst-smoke;
+
+@entity-color: @heather;
+
+@delimiter-color: @heather;
+@delimiter-period-color: @jungle-green;
+
+@brace-color: @heather;
+@keyword-color: @raw-sienna;
+@keyword-weight: 600;
+
+@variable-color: @heather;
+
+@string-color: @wild-willow;
+@string-constant-character-escape-color: @punch;
+
+@bracket-matcher-background-color: inherit;
+
+@invalid-deprecated-color: @punch;
+@invalid-illegal-color: @punch;
+
+@editor-selection-background-color: @st-tropaz;
+
+@regexp-color: @jungle-green;
+
+
+.bracket-matcher {
+  background-color: @bracket-matcher-background-color;
+  opacity: 0.7;
+}
+
+.comment {
+  color: @comment-color;
+  font-style: italic;
+}
+
+.entity {
+  color: @entity-color;
+}
+
+.keyword {
+  color: @keyword-color;
+  font-weight: @keyword-weight;
+}
+
+.constant {
+  color: @constant-color;
+
+  &.numeric {
+    color: @constant-numeric-color;
+  }
+
+  &.boolean {
+    color: @constant-boolean-color;
+  }
+
+}
+
+.variable {
+  color: @variable-color;
+}
+
+.delimiter {
+  color: @delimiter-color;
+}
+
+.brace {
+  color: @brace-color;
+}
+
+.delimiter.period {
+  color: @delimiter-period-color;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @invalid-deprecated-color;
+}
+
+.invalid.illegal {
+  color: @invalid-illegal-color;
+}
+
+.string {
+  color: @string-color;
+
+  .constant.character.escape {
+    color: @string-constant-character-escape-color;
+  }
+
+  &.regexp {
+    color: @regexp-color;
+  }
+}
