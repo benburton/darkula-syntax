@@ -2,4 +2,4 @@
 
 An [Atom](http://atom.io) theme inspired by the Darkula theme from [IntelliJ IDEA](http://www.jetbrains.com/idea/).
 
-![](screenshot.png)
+![](https://github.com/benburton/darkula-syntax/raw/master/screenshot.png)
