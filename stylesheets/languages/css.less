@@ -6,37 +6,33 @@
 @css-elements-weight: normal;
 @css-unit-color: @heather;
 
-.editor {
+atom-text-editor .css {
 
-  .css {
+  &.class {
+    color: @css-class-color;
+  }
 
-    &.class {
-      color: @css-class-color;
+  .property-name {
+    color: @css-property-name-color;
+  }
+
+  .property-value {
+    color: @css-property-value-color;
+  }
+
+  .constant {
+    &.numeric {
+      color: @css-constant-numeric-color;
     }
+  }
 
-    .property-name {
-      color: @css-property-name-color;
-    }
+  .elements {
+    color: @css-elements-color;
+    font-weight: @css-elements-weight;
+  }
 
-    .property-value {
-      color: @css-property-value-color;
-    }
-
-    .constant {
-      &.numeric {
-        color: @css-constant-numeric-color;
-      }
-    }
-
-    .elements {
-      color: @css-elements-color;
-      font-weight: @css-elements-weight;
-    }
-
-    .unit {
-      color: @css-unit-color;
-    }
-
+  .unit {
+    color: @css-unit-color;
   }
 
 }

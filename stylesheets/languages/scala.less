@@ -12,49 +12,45 @@
 @scala-keyword-operator-color: @heather;
 @scala-entity-name-function-declaration-color: @chardonnay;
 
-.editor {
+atom-text-editor .scala {
 
-  .scala {
+  .val.declaration {
+    color: @scala-val-declaration-color;
+    font-style: @scala-val-declaration-font-style;
+  }
 
-    .val.declaration {
-      color: @scala-val-declaration-color;
-      font-style: @scala-val-declaration-font-style;
+  .operator.comparison {
+    color: @scala-operator-comparison-color;
+  }
+
+  .storage {
+    &.type {
+      color: @scala-storage-type-color;
     }
 
-    .operator.comparison {
-      color: @scala-operator-comparison-color;
+    &.modifier {
+      color: @scala-storage-modifier-color;
     }
+  }
 
-    .storage {
-      &.type {
-        color: @scala-storage-type-color;
-      }
+  .comment {
+    color: @scala-comment-color;
+    font-style: @scala-comment-font-style;
 
-      &.modifier {
-        color: @scala-storage-modifier-color;
-      }
+    &.block, &.block .todo, &.block.documentation {
+      color: @scala-comment-block-color;
+      font-style: @scala-comment-block-font-style;
     }
+  }
 
-    .comment {
-      color: @scala-comment-color;
-      font-style: @scala-comment-font-style;
+  .keyword.operator {
+    color: @scala-keyword-operator-color;
+  }
 
-      &.block, &.block .todo, &.block.documentation {
-        color: @scala-comment-block-color;
-        font-style: @scala-comment-block-font-style;
-      }
+  .entity.name {
+    &.function.declaration {
+      color: @scala-entity-name-function-declaration-color;
     }
-
-    .keyword.operator {
-      color: @scala-keyword-operator-color;
-    }
-
-    .entity.name {
-      &.function.declaration {
-        color: @scala-entity-name-function-declaration-color;
-      }
-    }
-
   }
 
 }
