@@ -3,7 +3,7 @@
 @gutter-folded-color: @gray;
 @gutter-line-number-selection: lighten(@gutter-background-color, 5%);
 
-.editor {
+atom-text-editor, :host {
   .gutter {
     color: @gutter-color;
     background-color: @gutter-background-color;
@@ -18,7 +18,6 @@
   .fold-marker:after {
     color: @gutter-folded-color;
   }
-
 
   .line-number.cursor-line-no-selection {
     background-color: @gutter-line-number-selection;
